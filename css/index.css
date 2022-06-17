@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*menú*/
+.container-fluid {
+    color: #130f11;
+}
+
+#menu a,
+button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu a {
+    color: #130f11;
+
+}
+
+#mini {
+    max-height: 24%;
+}
+
+/*carousel*/
+
+.carousel-inner {
+    max-height: 39rem;
+}
+
+/*pods imagenes*/
+
+#img-pods {
+    max-height: 30rem;
+    width: 50%;
+}
+
+/*localización*/
+#local {
+    margin-top: 40px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.wrapper-local {
+    width: 80%;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+
+/*footer*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 35px;
+    ;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 15px;
+    padding: 0 7px;
+    color: #f3f3f3;
+}
+
+/*Pantalla ancha*/
+
+@media (max-width:1200px) {
+
+    #intro,
+    
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+}
+
+/*Pantalla pequeña*/
+
+@media (max-width:768px) {
+
+    #intro,
+    #pods {
+        width: 90%;
+        margin: auto;
+    }
+
+    #img-pods {
+        max-height: 20rem;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*Pantalla extraSmall MQ*/
+
+@media (max-width: 576px) {
+    #productop-fila-2 {
+        width: 100%;
+    }
+
+    #productop-fila-1 {
+        width: 100%;
+    }
+
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}

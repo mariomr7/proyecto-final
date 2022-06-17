@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Formulario de Validacion</title>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Formulario</title>
+	<meta name="description" content="formulario">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../css/formulario.css'>
+</head>
+
+<body>
+	<div id="iniciosesion">
+		<fieldset>
+			<legend>Formulario de inicio</legend>
+			<form name="formulario" id="formulario" action="../index.html" method="get">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" />
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" name="apellidos" id="apellidos" />
+				<label for="edad">Edad:</label>
+				<input name="edad" type="text" id="edad" maxlength="3" />
+				<label for="dni">DNI:</label>
+				<input name="dni" type="text" id="dni" value="XXXXXXXX A" />
+				<label for="provincia">Provincia:</label>
+				<select name="provincia" id="provincia">
+					<option value="0" selected="selected">Seleccione Provincia</option>
+					<option value="S">Sevilla</option>
+					<option value="M">Málaga</option>
+					<option value="H">Huelva</option>
+					<option value="C">Cádiz</option>
+					<option value="G">Granada</option>
+					<option value="J">Jaén</option>
+					<option value="A">Almería</option>
+					<option value="Co">Córdoba</option>
+				</select>
+				<label></label>
+				<input type="reset" name="limpiar" id="limpiar" value="Limpiar" />
+				<input type="submit" name="enviar" id="enviar" value="Enviar" />
+			</form>
+		</fieldset>
+	</div>
+	<script src="../js/formulario.js">
+	</script>
+</body>
+
+</html>
